@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MAX STUN Catalog</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #111;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 25px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .title h2 {
+      font-size: 24px;
+    }
+
+    .title p {
+      color: #777;
+      margin-top: 8px;
+    }
+
+    .brand-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .brand {
+      background: white;
+      padding: 30px 15px;
+      text-align: center;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 18px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      transition: 0.2s;
+    }
+
+    .brand:hover {
+      transform: translateY(-3px);
+    }
+
+    .brand span {
+      display: block;
+      font-size: 12px;
+      color: #999;
+      margin-top: 6px;
+      font-weight: normal;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #999;
+      font-size: 13px;
+    }
+
+    @media (min-width: 700px) {
+      .brand-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>MAX STUN</h1>
+    <p>CAR BODYKIT CATALOG</p >
+  </header>
+
+  <div class="container">
+
+    <div class="title">
+      <h2>Choose Your Car Brand</h2>
+      <p>Select a brand to explore our bodykit collection</p >
+    </div>
+
+    <div class="brand-grid">
+
+      <div class="brand" onclick="openBrand('Proton')">
+        PROTON
+        <span>View Products</span>
+      </div>
+
+      <div class="brand" onclick="openBrand('Perodua')">
+        PERODUA
+        <span>View Products</span>
+      </div>
+
+      <div class="brand" onclick="openBrand('Honda')">
+        HONDA
+        <span>View Products</span>
+      </div>
+
+      <div class="brand" onclick="openBrand('Toyota')">
+        TOYOTA
+        <span>View Products</span>
+      </div>
+
+      <div class="brand" onclick="openBrand('Volkswagen')">
+        VOLKSWAGEN
+        <span>View Products</span>
+      </div>
+
+      <div class="brand" onclick="openBrand('BMW')">
+        BMW
+        <span>View Products</span>
+      </div>
+
+      <div class="brand" onclick="openBrand('Mercedes-Benz')">
+        MERCEDES-BENZ
+        <span>View Products</span>
+      </div>
+
+      <div class="brand" onclick="openBrand('Others')">
+        OTHERS
+        <span>View Products</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 MAX STUN CAR BODYKIT
+  </footer>
+
+  <script>
+    function openBrand(brand) {
+      alert("You selected " + brand);
+    }
+  </script>
+
+</body>
+</html>
